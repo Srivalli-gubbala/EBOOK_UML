@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>eBook Management System</h1>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search eBooks by title">
+        </div>
+
+        <div class="book-list">
+            <h2>Available eBooks</h2>
+            <ul id="bookList"></ul>
+        </div>
+
+        <!-- Logout Button -->
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- Order Modal (hidden initially) -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <h2>Order eBook</h2>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <input type="text" id="address" placeholder="Enter your address" required>
+            <button id="submitOrderBtn">Submit Order</button>
+            <button id="closeModalBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
